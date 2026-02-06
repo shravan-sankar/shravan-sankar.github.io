@@ -1,7 +1,5 @@
 # Shravan Sankar | Portfolio
 
-A futuristic, interactive portfolio website showcasing my projects and experience. Live at **[shravan-sankar.github.io](https://shravan-sankar.github.io)**
-
 ## Features
 
 - **Futuristic design** – Sci-fi aesthetic with Orbitron typography, gradient text, and animated transitions
