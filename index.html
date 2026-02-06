@@ -32,7 +32,7 @@
     <header class="hero">
         <h1 class="hero-name"><span class="name-gradient">Shravan Sankar</span></h1>
         <p>
-            Computer Science and Mathematics Student at Loughborough University
+            <i>Computer Science and Mathematics Student at Loughborough University</i>
         </p>
         <div class="hero-buttons">
             <a href="#projects" class="btn">View Projects</a>
@@ -68,7 +68,22 @@
                         <li>Created a professional frontend with real-time charts and order management</li>
                         <li>Designed modular system architecture with event-driven trade execution and callbacks</li>
                     </ul>
-                    <a href="https://https://github.com/shravan-sankar/Limit-Order-Book-Simulator" target="_blank">
+
+                    <p>A recent project I'm really proud of is a Limit Order Book and Matching Engine I built in C++. It
+                        began as an experiment to understand how real trading systems work but quickly grew into
+                        something much more engaging. I designed it to handle limit and market orders, partial fills,
+                        cancellations, and price-time priority all while keeping the implementation efficient and
+                        readable. Seeing orders execute and match in real time felt like bringing a small-scale exchange
+                        to life.
+                        <br><br>
+                        This project holds special significance because it pushed me well beyond my comfort zone. I had
+                        to carefully consider performance, concurrency, and data structure design to make the system
+                        both fast and reliable. Through it, I developed a much deeper appreciation for the complexity
+                        behind modern trading infrastructure and gained confidence in writing high-performance,
+                        production-style code. It also reinforced my interest in algorithmic trading and quantitative
+                        systems development.
+                    </p>
+                    <a href="https://github.com/shravan-sankar/Limit-Order-Book-Simulator" target="_blank">
                         View code on GitHub →
                     </a>
                 </div>
@@ -100,6 +115,14 @@
                             Java collections,
                             exception handling, and modular class design to ensure scalability and maintainability.</li>
                     </ul>
+
+                    <p>I built a role-based ticketing system in Java as part of my coursework at Loughborough University. The project aimed to simulate a real-world ticketing system for a performance hall, allowing users to purchase and manage tickets for events.
+                        <br><br>
+                        I began by designing the system using OOP principles to create a role-based ticketing system. I implemented a comprehensive event browsing, ID-based search, and language filtering using Swing components, event listeners, and MVC-style structuring to improve user navigation. This feature allowed users to easily find and purchase tickets for the events they wanted.
+                        <br><br>
+                        To manage the inventory, I used Java's data structures and file handling capabilities. I implemented secure payment options using BufferedReader, BufferedWriter, file I/O streams, and custom toString() overrides for receipt generation. This helped store managers keep track of the stock and ensure that popular items were always available.
+                        <br><br>
+                    </p>
                     <a href="https://github.com/shravan-sankar/Event-Booking-System" target="_blank"
                         rel="noopener noreferrer">View code on GitHub →</a>
                 </div>
@@ -128,6 +151,98 @@
                         <li>Used Supabase and PostgreSQL (RLS), plus Redis and Postman for backend testing.</li>
                         <li>Applied unit testing to ensure stability during development changes.</li>
                     </ul>
+                    <p>During my internship at TruTrade Group, I developed a mental health and mood-tracking feature for
+                        the company's web platform. The challenge was to design a system that could help users monitor
+                        their wellbeing and receive meaningful insights, but the business requirements were initially
+                        vague and ambiguous. There was no clear definition of what “improving mental health engagement”
+                        meant or how success would be measured. This ambiguity forced me to rely heavily on data and
+                        feedback to drive decisions and validate my own design choices, while also integrating DevOps
+                        practices to ensure the feature could be deployed and iterated on reliably.
+                        <br><br>
+                        I began by building a daily check-in feature for the users using HTML, CSS, JavaScript and PHP.
+                        I collected the user interaction data to understand the wellbeing of the users. The dataset
+                        included both quantitative metrics such as daily check-in frequency and average session
+                        duration, and qualitative feedback about the user experience. My goal was to use this data to
+                        shape the feature's design, focusing on how to increase participation and retention over time.
+                        Alongside this, I containerised parts of the workflow using Docker to create consistent
+                        development environments and streamline testing.
+                        <br><br>
+                        To analyse the data, I used Python libraries such as Pandas, NumPy and Matplotlib for pattern
+                        recognition and to visualise charts for each specific user. In order to persist the user data, I
+                        used TablePlus and SQL for structured database queries, and later introduced dashboards to track
+                        engagement metrics over the development cycle. As the platform's infrastructure grew, I gained
+                        exposure to CI/CD pipelines and Kubernetes, learning how container orchestration and automated
+                        deployments support scalable and maintainable feature rollouts.
+                        <br><br>
+                        Based on this, I introduced data-driven prompts, for example showing motivational quotes or
+                        tailored wellness messages based on a user's emotional state. Further down the line, I designed
+                        five interactive mood states: happy, neutral, sad, bored, and anxious, each offering a tailored
+                        experience such as mini-games, break time, journalling and more. Each state had unique logic for
+                        updating user points and tracking engagement data. This ensured that user retention remained
+                        strong throughout the feature, with DevOps tools helping me continuously test and release
+                        updates with minimal disruption.
+                        <br><br>
+                        As the feature developed, the analytics revealed clear engagement spikes in the happy and bored
+                        states; users appreciated activities that were immediate and interactive. I used this data to
+                        iterate the design and prioritise features that maintained consistent user participation. After
+                        launch, the feature increased daily check-in activity by over 25% and improved session retention
+                        across the site.
+                        <br><br>
+                        This experience taught me that ambiguity can drive innovation when guided by data. By breaking
+                        the project into smaller goals, testing hypotheses, and validating each stage with real user
+                        behaviour, I gained confidence in both technical decision-making and infrastructure awareness.
+                        It strengthened my communication skills, as I presented to both technical and non-technical
+                        stakeholders.
+                        <br><br>
+                        Data is fundamental to Technology Management because it converts uncertainty into clarity and
+                        supports decisions that balance business goals with user experience. I believe this mindset,
+                        supported by DevOps practices and an understanding of scalable infrastructure, would allow me to
+                        make a positive contribution from day one.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Music Store Rental Management System</h3>
+                <p>
+                    Designed and implemented a music store rental management system in Python.
+                </p>
+
+                <button class="project-toggle">View details</button>
+
+                <div class="project-details">
+                    <button class="project-back-btn" aria-label="Back to projects">← Back</button>
+                    <ul>
+                        <li>Designed and implemented a music-record rental management system capable of handling CDs,
+                            vinyl, and cassette tape rentals, improving organisational efficiency for store management
+                            using arrays and functions</li>
+                        <li>Implemented a comprehensive search cell to filter music records based on artist, title,
+                            medium, and genre, displaying detailed information and availability</li>
+                        <li>Demonstrated proficiency in using Python to manage data structures, file handling and
+                            implemented inventory pruning using Matplotlib</li>
+                        <li>Utilised Jupyter Lab to create an interactive Python notebook for the project, showcasing
+                            clear documentation and code functionality</li>
+                    </ul>
+                    <p>I built a music store rental management system in Python as part of my coursework at Loughborough
+                        University. The project aimed to simulate a real-world music store rental system, allowing users
+                        to rent and manage their music collections.
+                        <br><br>
+                        I began by designing the system using arrays and functions to store and manage music records. I
+                        implemented a comprehensive search cell to filter records based on artist, title, medium, and
+                        genre, displaying detailed information and availability. This feature allowed users to easily
+                        find and rent the music they wanted.
+                        <br><br>
+                        To manage the inventory, I used Python's data structures and file handling capabilities. I
+                        implemented inventory pruning using Matplotlib to visualize the available music records and
+                        their availability status. This helped store managers keep track of the stock and ensure that
+                        popular items were always available.
+                        <br><br>
+                        I also utilised Jupyter Lab to create an interactive Python notebook for the project, showcasing
+                        clear documentation and code functionality. This made it easier for me to understand and
+                        maintain the code as I worked on the project.
+                    </p>
+                    <a href="https://github.com/shravan-sankar/Music-Rental-Management-System" target="_blank"
+                        rel="noopener noreferrer">View code on GitHub →</a>
                 </div>
             </div>
         </div>
@@ -139,7 +254,7 @@
             I am a 2nd year Computer Science and Mathematics student at Loughborough University with a strong passion
             for pursuing a career in finance, particularly in quantitative development. I have solid programming skills
             in Python and Java, and I am actively expanding my knowledge of C++ and SQL. I believe these technical
-            skills will be instrumental in achieving my career goals.
+            skills will be instrumental in achieving my career goals.<br>
             <br>
             My mathematics studies, particularly in probability, statistics, and linear algebra will provide me with a
             deep understanding of the principles that drive trading decisions and financial algorithms. Recognising the
@@ -156,10 +271,10 @@
                 <a href="mailto:shravan_sn@hotmail.com">Email Address</a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/shravan-sankar-38189a2a8/">Linkedin</a>
+                <a href="https://www.linkedin.com/in/shravan-sankar-38189a2a8/" target="_blank" rel="noopener noreferrer">Linkedin</a>
             </li>
             <li>
-                <a href="https://github.com/shravan-sankar">GitHub</a>
+                <a href="https://github.com/shravan-sankar" target="_blank" rel="noopener noreferrer">GitHub</a>
             </li>
         </ul>
     </section>
@@ -192,6 +307,21 @@
             <div class="stack-item reveal">
                 <img src="assets/icons/python.svg" alt="Python" />
                 <span>Python</span>
+            </div>
+
+            <div class="stack-item reveal">
+                <img src="assets/icons/java.svg" alt="Java" />
+                <span>Java</span>
+            </div>
+
+            <div class="stack-item reveal">
+                <img src="assets/icons/php.svg" alt="PHP" />
+                <span>PHP</span>
+            </div>
+
+            <div class="stack-item reveal">
+                <img src="assets/icons/mysql.svg" alt="MySQL" />
+                <span>MySQL</span>
             </div>
         </div>
     </section>
