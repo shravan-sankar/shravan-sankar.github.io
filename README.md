@@ -19,6 +19,7 @@
 - **Limit Order Book Simulator** – C++ matching engine with real-time trading interface
 - **Ticketing System for a Performance Hall** – Java role-based system with Swing UI
 - **Mental Health Feature** – Laravel/PHP feature built during internship
+- **Music Store Mental Health Management System** - Python project using Jupyter Notebook
 
 ## Running Locally
 
