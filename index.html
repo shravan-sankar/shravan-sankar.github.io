@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shravan Sankar | Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <span class="logo"></span>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1 class="hero-name"><span class="name-gradient">Shravan Sankar</span></h1>
+        <p>
+            Computer Science and Mathematics Student at Loughborough University
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="https://github.com/shravan-sankar" class="btn secondary" target="_blank" rel="noopener noreferrer">
+                GitHub
+            </a>
+
+        </div>
+    </header>
+
+    <section id="projects" class="section-reveal">
+        <h2>My Projects</h2>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Limit Order Book Simulator</h3>
+                <p>
+                    Implemented a limit order book and matching engine in C++ to explore
+                    market microstructure.
+                </p>
+
+                <button class="project-toggle">View details</button>
+
+                <div class="project-details">
+                    <button class="project-back-btn" aria-label="Back to projects">← Back</button>
+                    <ul>
+                        <li>Engineered a complete limit order book with price-time priority matching algorithm in C++
+                        </li>
+                        <li>Implemented efficient data structures (custom maps, priority queues) for O(log n) order</li>
+                        operations
+                        <li>Developed real-time trading interface with WebSocket communication and live market data</li>
+                        <li>Built multithreaded architecture supporting high-frequency trading simulation</li>
+                        <li>Created a professional frontend with real-time charts and order management</li>
+                        <li>Designed modular system architecture with event-driven trade execution and callbacks</li>
+                    </ul>
+                    <a href="https://https://github.com/shravan-sankar/Limit-Order-Book-Simulator" target="_blank">
+                        View code on GitHub →
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Ticketing System for a Performance Hall</h3>
+                <p>
+                    Built a role-based ticketing system for performance hall events using OOP principles in Java.
+                </p>
+
+                <button class="project-toggle">View details</button>
+
+                <div class="project-details">
+                    <button class="project-back-btn" aria-label="Back to projects">← Back</button>
+                    <ul>
+                        <li>Developed a role-based ticketing system using Java, enabling admin CRUD operations for
+                            events and stock,
+                            and customer workflows for purchasing and checkout.
+                        </li>
+                        <li>Implemented event browsing, ID-based search, and language filtering using Swing
+                            (javax.swing)
+                            components, event listeners, and MVC-style structuring to improve user navigation.</li>
+                        <li>Integrated secure payment options (PayPal, Credit Card) with real-time stock synchronisation
+                            using
+                            BufferedReader, BufferedWriter, file I/O streams, and custom toString() overrides for
+                            receipt generation.</li>
+                        <li>Applied core OOP principles - encapsulation, inheritance, interfaces, enums and utilised
+                            Java collections,
+                            exception handling, and modular class design to ensure scalability and maintainability.</li>
+                    </ul>
+                    <a href="https://github.com/shravan-sankar/Event-Booking-System" target="_blank"
+                        rel="noopener noreferrer">View code on GitHub →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Mental Health Feature at Internship</h3>
+                <p>
+                    Designed a mood-based feature on their website using Laravel, PHP, SQL and JavaScript.
+                </p>
+
+                <button class="project-toggle">View details</button>
+
+                <div class="project-details">
+                    <button class="project-back-btn" aria-label="Back to projects">← Back</button>
+                    <ul>
+                        <li>Worked with Docker (containers, volumes) and TablePlus for SQL database management.</li>
+                        <li>Used Git (branching, rebasing) and collaborated on feature development through pull
+                            requests.</li>
+                        <li>Built and tested a mental health feature using PHP, Laravel, and RESTful APIs, with SEO and
+                            accessibility
+                            considerations.</li>
+                        <li>Gained exposure to CI/CD pipelines, Kubernetes, and Infrastructure as Code.</li>
+                        <li>Implemented secure API authentication using JWTs, refresh tokens, rate limiting, and IP
+                            blocking.</li>
+                        <li>Used Supabase and PostgreSQL (RLS), plus Redis and Postman for backend testing.</li>
+                        <li>Applied unit testing to ensure stability during development changes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about section-reveal">
+        <h2>About Me</h2>
+        <p>
+            I am a 2nd year Computer Science and Mathematics student at Loughborough University with a strong passion
+            for pursuing a career in finance, particularly in quantitative development. I have solid programming skills
+            in Python and Java, and I am actively expanding my knowledge of C++ and SQL. I believe these technical
+            skills will be instrumental in achieving my career goals.
+            <br>
+            My mathematics studies, particularly in probability, statistics, and linear algebra will provide me with a
+            deep understanding of the principles that drive trading decisions and financial algorithms. Recognising the
+            growing impact of AI in the finance sector, I am eager to explore machine learning and enhance my
+            proficiency in developing models using large language models. With a dedication to continuous learning and
+            problem-solving, I am confident in my ability to contribute meaningfully to the evolving world of finance.
+        </p>
+    </section>
+
+    <section id="contact" class="contact section-reveal">
+        <h2>Get in Touch</h2>
+        <ul>
+            <li>
+                <a href="mailto:shravan_sn@hotmail.com">Email Address</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/shravan-sankar-38189a2a8/">Linkedin</a>
+            </li>
+            <li>
+                <a href="https://github.com/shravan-sankar">GitHub</a>
+            </li>
+        </ul>
+    </section>
+
+
+    <section id="stack" class="stack-section section-reveal">
+        <h2>Tech Stack</h2>
+
+        <div class="stack-grid">
+            <div class="stack-item reveal">
+                <img src="assets/icons/html.svg" alt="HTML" />
+                <span>HTML</span>
+            </div>
+
+            <div class="stack-item reveal">
+                <img src="assets/icons/css.svg" alt="CSS" />
+                <span>CSS</span>
+            </div>
+
+            <div class="stack-item reveal">
+                <img src="assets/icons/javascript.svg" alt="JavaScript" />
+                <span>JavaScript</span>
+            </div>
+
+            <div class="stack-item reveal">
+                <img src="assets/icons/cpp.svg" alt="C++" />
+                <span>C++</span>
+            </div>
+
+            <div class="stack-item reveal">
+                <img src="assets/icons/python.svg" alt="Python" />
+                <span>Python</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Shravan Sankar</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
