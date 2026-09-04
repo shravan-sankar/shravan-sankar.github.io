@@ -4,347 +4,592 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Shravan Sankar — CS & Maths @ Loughborough University | Co-Founder of Loughborough Quantitative &amp; Discretionary Fund" />
     <title>Shravan Sankar | Portfolio</title>
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@500;600;700;800&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
 
-    <nav>
+    <div class="ambient-glow" aria-hidden="true"></div>
+
+    <nav id="navbar">
         <div class="nav-container">
-            <span class="logo"></span>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <a href="#" class="logo">
+                <span class="logo-mark">SS</span>
+                <span class="logo-text">Shravan Sankar</span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#projects" data-section="projects">Projects</a></li>
+                <li><a href="#about" data-section="about">About</a></li>
+                <li><a href="#stack" data-section="stack">Stack</a></li>
+                <li><a href="#contact" data-section="contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <header class="hero">
-        <h1 class="hero-name"><span class="name-gradient">Shravan Sankar</span></h1>
-        <p>
-            <i>Computer Science and Mathematics Student at Loughborough University</i>
-        </p>
-        <div class="hero-buttons">
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="https://github.com/shravan-sankar" class="btn secondary" target="_blank" rel="noopener noreferrer">
-                GitHub
-            </a>
-
+        <div class="hero-content">
+            <p class="hero-eyebrow">
+                <span class="status-dot"></span>
+                Available to Exciting Opportunities
+            </p>
+            <h1 class="hero-name">
+                <span class="name-gradient">Shravan Sankar</span>
+            </h1>
+            <p class="hero-subtitle">
+                CS &amp; Maths @ Loughborough University <br> Co-Founder of Loughborough Quantitative &amp; Discretionary
+                Fund
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    View Projects
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="https://github.com/shravan-sankar" class="btn btn-secondary" target="_blank"
+                    rel="noopener noreferrer">
+                    GitHub
+                </a>
+            </div>
         </div>
+        <a href="#projects" class="scroll-hint" aria-label="Scroll to projects">
+            <span>Scroll</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M10 4v12M6 12l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </a>
     </header>
 
-    <section id="projects" class="section-reveal">
-        <h2>My Projects</h2>
-
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Limit Order Book Simulator</h3>
-                <p>
-                    Implemented a limit order book and matching engine in C++ to explore
-                    market microstructure.
-                </p>
-
-                <button class="project-toggle">View details</button>
-
-                <div class="project-details">
-                    <button class="project-back-btn" aria-label="Back to projects">← Back</button>
-                    <ul>
-                        <li>Engineered a complete limit order book with price-time priority matching algorithm in C++
-                        </li>
-                        <li>Implemented efficient data structures (custom maps, priority queues) for O(log n) order</li>
-                        operations
-                        <li>Developed real-time trading interface with WebSocket communication and live market data</li>
-                        <li>Built multithreaded architecture supporting high-frequency trading simulation</li>
-                        <li>Created a professional frontend with real-time charts and order management</li>
-                        <li>Designed modular system architecture with event-driven trade execution and callbacks</li>
-                    </ul>
-
-                    <p>A recent project I'm really proud of is a Limit Order Book and Matching Engine I built in C++. It
-                        began as an experiment to understand how real trading systems work but quickly grew into
-                        something much more engaging. I designed it to handle limit and market orders, partial fills,
-                        cancellations, and price-time priority all while keeping the implementation efficient and
-                        readable. Seeing orders execute and match in real time felt like bringing a small-scale exchange
-                        to life.
-                        <br><br>
-                        This project holds special significance because it pushed me well beyond my comfort zone. I had
-                        to carefully consider performance, concurrency, and data structure design to make the system
-                        both fast and reliable. Through it, I developed a much deeper appreciation for the complexity
-                        behind modern trading infrastructure and gained confidence in writing high-performance,
-                        production-style code. It also reinforced my interest in algorithmic trading and quantitative
-                        systems development.
-                    </p>
-                    <a href="https://github.com/shravan-sankar/Limit-Order-Book-Simulator" target="_blank">
-                        View code on GitHub →
-                    </a>
-                </div>
+    <main>
+        <section id="projects" class="section-reveal">
+            <div class="section-header">
+                <span class="section-label">01 — Work</span>
+                <h2>My Projects</h2>
+                <p class="section-desc">Systems I've built academically and personally to deepen my understanding of
+                    software engineering and
+                    eTrading systems.</p>
             </div>
 
-            <div class="project-card">
-                <h3>Ticketing System for a Performance Hall</h3>
-                <p>
-                    Built a role-based ticketing system for performance hall events using OOP principles in Java.
-                </p>
-
-                <button class="project-toggle">View details</button>
-
-                <div class="project-details">
-                    <button class="project-back-btn" aria-label="Back to projects">← Back</button>
-                    <ul>
-                        <li>Developed a role-based ticketing system using Java, enabling admin CRUD operations for
-                            events and stock,
-                            and customer workflows for purchasing and checkout.
-                        </li>
-                        <li>Implemented event browsing, ID-based search, and language filtering using Swing
-                            (javax.swing)
-                            components, event listeners, and MVC-style structuring to improve user navigation.</li>
-                        <li>Integrated secure payment options (PayPal, Credit Card) with real-time stock synchronisation
-                            using
-                            BufferedReader, BufferedWriter, file I/O streams, and custom toString() overrides for
-                            receipt generation.</li>
-                        <li>Applied core OOP principles - encapsulation, inheritance, interfaces, enums and utilised
-                            Java collections,
-                            exception handling, and modular class design to ensure scalability and maintainability.</li>
-                    </ul>
-
-                    <p>I built a role-based ticketing system in Java as part of my coursework at Loughborough
-                        University. The project aimed to simulate a real-world ticketing system for a performance hall,
-                        allowing users to purchase and manage tickets for events.
-                        <br><br>
-                        I began by designing the system using OOP principles to create a role-based ticketing system. I
-                        implemented a comprehensive event browsing, ID-based search, and language filtering using Swing
-                        components, event listeners, and MVC-style structuring to improve user navigation. This feature
-                        allowed users to easily find and purchase tickets for the events they wanted.
-                        <br><br>
-                        To manage the inventory, I used Java's data structures and file handling capabilities. I
-                        implemented secure payment options using BufferedReader, BufferedWriter, file I/O streams, and
-                        custom toString() overrides for receipt generation. This helped store managers keep track of the
-                        stock and ensure that popular items were always available.
-                        <br><br>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-meta">
+                        <span class="project-index">01</span>
+                        <div class="project-tags">
+                            <span class="tag-featured"><b>*Featured*</b></span>
+                            <span class="tag-internship">NatWest Group</span>
+                        </div>
+                    </div>
+                    <h3>Git Proxy Compliance Gate & Webhook</h3>
+                    <p>
+                        Designed a Compliance Gateway to approve contributors and a Webhook Client for communication. 
                     </p>
-                    <a href="https://github.com/shravan-sankar/Event-Booking-System" target="_blank"
-                        rel="noopener noreferrer">View code on GitHub →</a>
+                    <button class="project-toggle">
+                        View details
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                            <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                    <div class="project-details">
+                        <button class="project-back-btn" aria-label="Back to projects">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                <path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Back to projects
+                        </button>
+                        <div class="project-details-header">
+                            <span class="project-index">01</span>
+                            <h3>Git Proxy Compliance Gate & Webhook</h3>
+                        </div>
+                        <ul>
+                            <li>Developed a Policy Enforcement Gateway in TypeScript and Node.js to monitor and control
+                                software changes via
+                                an HTTP proxy layer, integrating with existing engineering and compliance systems.
+                            </li>
+                            <li>Configured an event-driven HTTP Webhook Client with exponential backoff and payload
+                                serialisation, enabling
+                                real-time compliance monitoring and integration with enterprise infrastructure.</li>
+                            <li>Designed a Multi-Step Approval State Machine backed by RESTful APIs and persistent audit
+                                logging, enforcing
+                                role-based access controls and segregation of duties.</li>
+                            <li>Managed end-to-end delivery using GitLab for version control and merge requests, JIRA for sprint planning and story
+                                tracking, Confluence for technical documentation, architecture decision records.</li>
+                        </ul>
+
+                        <div class="project-tags"> <span class="tag-featured">Approved Pull Requests on GitHub</span> </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-meta">
+                        <span class="project-index">02</span>
+                        <div class="project-tags">
+                            <span class="tag-ongoing">In Development</span>
+                            <span>C++20</span>
+                        </div>
+                    </div>
+                    <h3>Limit Order Book Simulator</h3>
+                    <p>
+                        Implementing a Limit Order Book and Matching Engine in C++20 to explore
+                        market microstructure.
+                    </p>
+                    <button class="project-toggle">
+                        View details
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                            <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                    <div class="project-details">
+                        <button class="project-back-btn" aria-label="Back to projects">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                <path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Back to projects
+                        </button>
+                        <div class="project-details-header">
+                            <span class="project-index">02</span>
+                            <h3>Limit Order Book Simulator</h3>
+                        </div>
+                        <ul>
+                            <li>Originally built in C++11 to understand semantics, currently in development to C++20.
+                            </li>
+                            <li>Built a C++ Limit Order Book using price-time priority to simulate how buy and sell
+                                orders are matched on an
+                                exchange.</li>
+                            <li>Implemented Order Placement, Cancellation and Trade Execution, using appropriate data
+                                structures to efficiently
+                                process market activity.</li>
+                        </ul>
+
+                        <p>A recent project I'm really proud of and still working on is a Limit Order Book and Matching
+                            Engine I built in
+                            C++17. It began as an experiment to understand how real trading systems work. I designed it
+                            to handle limit and market orders, partial
+                            fills, cancellations, and price-time priority.
+                            <br><br>
+                            This project holds special significance because it pushed me well beyond my comfort zone. I
+                            had to carefully consider performance, concurrency, and data structure design to make the
+                            system both fast and reliable. Through it, I developed a much deeper appreciation for the
+                            complexity behind modern trading infrastructure and gained confidence in writing
+                            high-performance, production-style code.
+                        </p>
+                        <a href="https://github.com/shravan-sankar/Limit-Order-Book-Simulator" target="_blank"
+                            rel="noopener noreferrer" class="project-link">
+                            View code on GitHub
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                                <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card project-card--upcoming">
+                    <div class="project-meta">
+                        <span class="project-index">03</span>
+                        <div class="project-tags">
+                            <span class="tag-lqdf">LQDF</span>
+                            <span class="tag-upcoming">Coming Soon</span>
+                            <span>C++23</span>
+                        </div>
+                    </div>
+                    <h3>Backtesting Engine</h3>
+                    <p>
+                        Building a Backtesting Engine in C++23 to evaluate trading
+                        strategies against historical market data.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-meta">
+                        <span class="project-index">04</span>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>OOP</span>
+                        </div>
+                    </div>
+                    <h3>Ticketing System for a Performance Hall</h3>
+                    <p>
+                        Built a role-based ticketing system for performance hall events using OOP principles in Java.
+                    </p>
+                    <button class="project-toggle">
+                        View details
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                            <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                    <div class="project-details">
+                        <button class="project-back-btn" aria-label="Back to projects">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                <path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Back to projects
+                        </button>
+                        <div class="project-details-header">
+                            <span class="project-index">04</span>
+                            <h3>Ticketing System for a Performance Hall</h3>
+                        </div>
+                        <ul>
+                            <li>Developed a role-based ticketing system using Java, enabling admin CRUD operations for
+                                events and stock, and customer workflows for purchasing and checkout.</li>
+                            <li>Implemented event browsing, ID-based search, and language filtering using Swing
+                                components, event listeners, and MVC-style structuring to improve user navigation.</li>
+                            <li>Integrated secure payment options (PayPal, Credit Card) with real-time stock
+                                synchronisation using BufferedReader, BufferedWriter, file I/O streams, and custom
+                                toString() overrides for receipt generation.</li>
+                            <li>Applied core OOP principles — encapsulation, inheritance, interfaces, enums — and
+                                utilised Java collections, exception handling, and modular class design to ensure
+                                scalability and maintainability.</li>
+                        </ul>
+
+                        <p>I built a role-based ticketing system in Java as part of my coursework at Loughborough
+                            University. The project aimed to simulate a real-world ticketing system for a performance
+                            hall, allowing users to purchase and manage tickets for events.
+                            <br><br>
+                            I began by designing the system using OOP principles to create a role-based ticketing
+                            system. I implemented a comprehensive event browsing, ID-based search, and language
+                            filtering
+                            using Swing components, event listeners, and MVC-style structuring to improve user
+                            navigation. This feature allowed users to easily find and purchase tickets for the events
+                            they wanted.
+                            <br><br>
+                            To manage the inventory, I used Java's data structures and file handling capabilities. I
+                            implemented secure payment options using BufferedReader, BufferedWriter, file I/O streams,
+                            and custom toString() overrides for receipt generation. This helped store managers keep
+                            track
+                            of the stock and ensure that popular items were always available.
+                        </p>
+                        <a href="https://github.com/shravan-sankar/Event-Booking-System" target="_blank"
+                            rel="noopener noreferrer" class="project-link">
+                            View code on GitHub
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                                <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-meta">
+                        <span class="project-index">05</span>
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>SQL</span>
+                            <span>JavaScript</span>
+                            <span class="tag-internship">TruTrade</span>
+                        </div>
+                    </div>
+                    <h3>Mental Health Feature at TruTrade</h3>
+                    <p>
+                        Designed a mood-based feature on the TruTrade website.
+                    </p>
+                    <button class="project-toggle">
+                        View details
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                            <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                    <div class="project-details">
+                        <button class="project-back-btn" aria-label="Back to projects">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                <path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Back to projects
+                        </button>
+                        <div class="project-details-header">
+                            <span class="project-index">05</span>
+                            <h3>Mental Health Feature at TruTrade</h3>
+                        </div>
+                        <ul>
+                            <li>Worked with Docker (containers, volumes) and TablePlus for SQL database management.</li>
+                            <li>Used Git (branching, rebasing) and collaborated on feature development through pull
+                                requests.</li>
+                            <li>Built and tested a mental health feature using PHP, Laravel, and RESTful APIs, with SEO
+                                and accessibility considerations.</li>
+                            <li>Gained exposure to CI/CD pipelines, Kubernetes, and Infrastructure as Code.</li>
+                            <li>Implemented secure API authentication using JWTs, refresh tokens, rate limiting, and IP
+                                blocking.</li>
+                            <li>Used Supabase and PostgreSQL (RLS), plus Redis and Postman for backend testing.</li>
+                            <li>Applied unit testing to ensure stability during development changes.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-meta">
+                        <span class="project-index">06</span>
+                        <div class="project-tags">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <h3>Music Store Rental Management System</h3>
+                    <p>
+                        Designed and implemented a Music Store Rental Management System in Python.
+                    </p>
+                    <button class="project-toggle">
+                        View details
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                            <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                    <div class="project-details">
+                        <button class="project-back-btn" aria-label="Back to projects">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                <path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Back to projects
+                        </button>
+                        <div class="project-details-header">
+                            <span class="project-index">06</span>
+                            <h3>Music Store Rental Management System</h3>
+                        </div>
+                        <ul>
+                            <li>Designed and implemented a music-record rental management system capable of handling
+                                CDs, vinyl, and cassette tape rentals, improving organisational efficiency for store
+                                management using arrays and functions</li>
+                            <li>Implemented a comprehensive search cell to filter music records based on artist, title,
+                                medium, and genre, displaying detailed information and availability</li>
+                            <li>Demonstrated proficiency in using Python to manage data structures, file handling and
+                                implemented inventory pruning using Matplotlib</li>
+                            <li>Utilised Jupyter Lab to create an interactive Python notebook for the project,
+                                showcasing clear documentation and code functionality</li>
+                        </ul>
+                        <a href="https://github.com/shravan-sankar/Music-Rental-Management-System" target="_blank"
+                            rel="noopener noreferrer" class="project-link">
+                            View code on GitHub
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                                <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="about section-reveal">
+            <div class="section-header">
+                <span class="section-label">02 — About</span>
+                <h2>About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am a final year Computer Science and Mathematics student at Loughborough University, driven by
+                        a strong ambition to build a career in quantitative development / software engineering within
+                        the financial sector. I enjoy working with low latency applications and using C++ in HFT, where
+                        mathematical rigour meets high performance systems and real world financial decision making.
+                    </p>
+                    <p>
+                        My mathematical background; especially in probability, statistics, and linear algebra, has given
+                        me a strong intuition for the mechanisms underpinning pricing models, risk, and trading
+                        strategies. With the rapid rise of AI in finance, I am also keen to explore machine learning and
+                        its applications in quantitative trading and its relation to the use of large language models in
+                        research and automation workflows.
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <span class="highlight-value">3rd Year</span>
+                        <span class="highlight-label">Loughborough University</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-value">CS &amp; Maths</span>
+                        <span class="highlight-label">Bsc Hons</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-value">FinTech</span>
+                        <span class="highlight-label">Career Path</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-value">C++ / Python / Java</span>
+                        <span class="highlight-label">Proficient Languages</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-value">TruTrade</span>
+                        <span class="highlight-label">Internship 25' Summer</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-value">NatWest Group</span>
+                        <span class="highlight-label">Internship 26' Summer</span>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="project-card">
-                <h3>Mental Health Feature at Internship</h3>
-                <p>
-                    Designed a mood-based feature on their website using Laravel, PHP, SQL and JavaScript.
-                </p>
-
-                <button class="project-toggle">View details</button>
-
-                <div class="project-details">
-                    <button class="project-back-btn" aria-label="Back to projects">← Back</button>
-                    <ul>
-                        <li>Worked with Docker (containers, volumes) and TablePlus for SQL database management.</li>
-                        <li>Used Git (branching, rebasing) and collaborated on feature development through pull
-                            requests.</li>
-                        <li>Built and tested a mental health feature using PHP, Laravel, and RESTful APIs, with SEO and
-                            accessibility
-                            considerations.</li>
-                        <li>Gained exposure to CI/CD pipelines, Kubernetes, and Infrastructure as Code.</li>
-                        <li>Implemented secure API authentication using JWTs, refresh tokens, rate limiting, and IP
-                            blocking.</li>
-                        <li>Used Supabase and PostgreSQL (RLS), plus Redis and Postman for backend testing.</li>
-                        <li>Applied unit testing to ensure stability during development changes.</li>
-                    </ul>
-                    <p>During my internship at TruTrade Group, I developed a mental health and mood-tracking feature for
-                        the company's web platform. The challenge was to design a system that could help users monitor
-                        their wellbeing and receive meaningful insights, but the business requirements were initially
-                        vague and ambiguous. There was no clear definition of what “improving mental health engagement”
-                        meant or how success would be measured. This ambiguity forced me to rely heavily on data and
-                        feedback to drive decisions and validate my own design choices, while also integrating DevOps
-                        practices to ensure the feature could be deployed and iterated on reliably.
-                        <br><br>
-                        I began by building a daily check-in feature for the users using HTML, CSS, JavaScript and PHP.
-                        I collected the user interaction data to understand the wellbeing of the users. The dataset
-                        included both quantitative metrics such as daily check-in frequency and average session
-                        duration, and qualitative feedback about the user experience. My goal was to use this data to
-                        shape the feature's design, focusing on how to increase participation and retention over time.
-                        Alongside this, I containerised parts of the workflow using Docker to create consistent
-                        development environments and streamline testing.
-                        <br><br>
-                        To analyse the data, I used Python libraries such as Pandas, NumPy and Matplotlib for pattern
-                        recognition and to visualise charts for each specific user. In order to persist the user data, I
-                        used TablePlus and SQL for structured database queries, and later introduced dashboards to track
-                        engagement metrics over the development cycle. As the platform's infrastructure grew, I gained
-                        exposure to CI/CD pipelines and Kubernetes, learning how container orchestration and automated
-                        deployments support scalable and maintainable feature rollouts.
-                        <br><br>
-                        Based on this, I introduced data-driven prompts, for example showing motivational quotes or
-                        tailored wellness messages based on a user's emotional state. Further down the line, I designed
-                        five interactive mood states: happy, neutral, sad, bored, and anxious, each offering a tailored
-                        experience such as mini-games, break time, journalling and more. Each state had unique logic for
-                        updating user points and tracking engagement data. This ensured that user retention remained
-                        strong throughout the feature, with DevOps tools helping me continuously test and release
-                        updates with minimal disruption.
-                        <br><br>
-                        As the feature developed, the analytics revealed clear engagement spikes in the happy and bored
-                        states; users appreciated activities that were immediate and interactive. I used this data to
-                        iterate the design and prioritise features that maintained consistent user participation. After
-                        launch, the feature increased daily check-in activity by over 25% and improved session retention
-                        across the site.
-                        <br><br>
-                        This experience taught me that ambiguity can drive innovation when guided by data. By breaking
-                        the project into smaller goals, testing hypotheses, and validating each stage with real user
-                        behaviour, I gained confidence in both technical decision-making and infrastructure awareness.
-                        It strengthened my communication skills, as I presented to both technical and non-technical
-                        stakeholders.
-                        <br><br>
-                        Data is fundamental to Technology Management because it converts uncertainty into clarity and
-                        supports decisions that balance business goals with user experience. I believe this mindset,
-                        supported by DevOps practices and an understanding of scalable infrastructure, would allow me to
-                        make a positive contribution from day one.
-                    </p>
-                </div>
+        <section id="stack" class="stack-section section-reveal">
+            <div class="section-header section-header--center">
+                <span class="section-label">03 — Stack</span>
+                <h2>Technologies</h2>
+                <p class="section-desc">Languages I have worked with in systems, web, and data.</p>
             </div>
 
-            <div class="project-card">
-                <h3>Music Store Rental Management System</h3>
-                <p>
-                    Designed and implemented a music store rental management system in Python.
-                </p>
-
-                <button class="project-toggle">View details</button>
-
-                <div class="project-details">
-                    <button class="project-back-btn" aria-label="Back to projects">← Back</button>
-                    <ul>
-                        <li>Designed and implemented a music-record rental management system capable of handling CDs,
-                            vinyl, and cassette tape rentals, improving organisational efficiency for store management
-                            using arrays and functions</li>
-                        <li>Implemented a comprehensive search cell to filter music records based on artist, title,
-                            medium, and genre, displaying detailed information and availability</li>
-                        <li>Demonstrated proficiency in using Python to manage data structures, file handling and
-                            implemented inventory pruning using Matplotlib</li>
-                        <li>Utilised Jupyter Lab to create an interactive Python notebook for the project, showcasing
-                            clear documentation and code functionality</li>
-                    </ul>
-                    <p>I built a music store rental management system in Python as part of my coursework at Loughborough
-                        University. The project aimed to simulate a real-world music store rental system, allowing users
-                        to rent and manage their music collections.
-                        <br><br>
-                        I began by designing the system using arrays and functions to store and manage music records. I
-                        implemented a comprehensive search cell to filter records based on artist, title, medium, and
-                        genre, displaying detailed information and availability. This feature allowed users to easily
-                        find and rent the music they wanted.
-                        <br><br>
-                        To manage the inventory, I used Python's data structures and file handling capabilities. I
-                        implemented inventory pruning using Matplotlib to visualize the available music records and
-                        their availability status. This helped store managers keep track of the stock and ensure that
-                        popular items were always available.
-                        <br><br>
-                        I also utilised Jupyter Lab to create an interactive Python notebook for the project, showcasing
-                        clear documentation and code functionality. This made it easier for me to understand and
-                        maintain the code as I worked on the project.
-                    </p>
-                    <a href="https://github.com/shravan-sankar/Music-Rental-Management-System" target="_blank"
-                        rel="noopener noreferrer">View code on GitHub →</a>
+            <div class="stack-grid">
+                <div class="stack-item reveal">
+                    <div class="stack-icon">
+                        <img src="assets/icons/html.svg" alt="" />
+                    </div>
+                    <span>HTML</span>
+                </div>
+                <div class="stack-item reveal">
+                    <div class="stack-icon">
+                        <img src="assets/icons/css.svg" alt="" />
+                    </div>
+                    <span>CSS</span>
+                </div>
+                <div class="stack-item reveal">
+                    <div class="stack-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="" />
+                    </div>
+                    <span>JavaScript</span>
+                </div>
+                <div class="stack-item reveal">
+                    <div class="stack-icon">
+                        <img src="assets/icons/cpp.svg" alt="" />
+                    </div>
+                    <span>C++</span>
+                </div>
+                <div class="stack-item reveal">
+                    <div class="stack-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            alt="" />
+                    </div>
+                    <span>Python</span>
+                </div>
+                <div class="stack-item reveal">
+                    <div class="stack-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" />
+                    </div>
+                    <span>Java</span>
+                </div>
+                <div class="stack-item reveal">
+                    <div class="stack-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                            alt="" />
+                    </div>
+                    <span>Spring Boot</span>
+                </div>
+                <div class="stack-item reveal">
+                    <div class="stack-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" />
+                    </div>
+                    <span>MySQL</span>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about" class="about section-reveal">
-        <h2>About Me</h2>
-        <p>
-            I am a second year Computer Science and Mathematics student at Loughborough University, driven by a strong
-            ambition to build a career in quantitative development within the financial sector. I enjoy working at the
-            intersection of theory and implementation, where mathematical rigour meets high-performance systems and real
-            world financial decision making.<br>
+        <section id="contact" class="contact section-reveal">
+            <div class="section-header">
+                <span class="section-label">04 — Contact</span>
+                <h2>Get in Touch</h2>
+                <p class="section-desc">Open to Internships, Graduate Roles, and Interesting Collaborations!</p>
+            </div>
 
-            I have developed solid programming foundations in Python and Java, and I am currently expanding my technical
-            expertise with C++ and SQL, with a focus on writing efficient, industry approved code. I am particularly
-            interested in how these technologies are used to build scalable trading systems and data-driven financial
-            infrastructure.<br>
+            <div class="contact-grid">
+                <a href="mailto:shravan_sn@hotmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">shravan_sn@hotmail.com</span>
+                    </div>
+                    <svg class="contact-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        aria-hidden="true">
+                        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
 
-            My mathematical background; especially in probability, statistics, and linear algebra, has given me a strong
-            intuition for the mechanisms underpinning pricing models, risk, and trading strategies. I find these areas
-            especially compelling when translated into algorithmic and computational contexts.<br>
-
-            With the rapid rise of AI in finance, I am also keen to explore machine learning and its applications in
-            quantitative trading, particularly in relation to model development and the use of large language models in
-            research and automation workflows. I am motivated by continuous learning and problem solving, and I am eager
-            to contribute to fast-paced environments where technical precision and analytical thinking are crucial.<br>
-        </p>
-    </section>
-
-    <section id="contact" class="contact section-reveal">
-        <h2>Get in Touch</h2>
-        <ul>
-            <li>
-                <a href="mailto:shravan_sn@hotmail.com">Email Address</a>
-            </li>
-            <li>
                 <a href="https://www.linkedin.com/in/shravan-sankar-38189a2a8/" target="_blank"
-                    rel="noopener noreferrer">Linkedin</a>
-            </li>
-            <li>
-                <a href="https://github.com/shravan-sankar" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </li>
-        </ul>
-    </section>
+                    rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 014 0v4M11 10v7" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">shravan-sankar</span>
+                    </div>
+                    <svg class="contact-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        aria-hidden="true">
+                        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
 
-
-    <section id="stack" class="stack-section section-reveal">
-        <h2>Tech Stack</h2>
-
-        <div class="stack-grid">
-            <div class="stack-item reveal">
-                <img src="assets/icons/html.svg" alt="HTML" />
-                <span>HTML</span>
+                <a href="https://github.com/shravan-sankar" target="_blank" rel="noopener noreferrer"
+                    class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path
+                                d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .7-1.9 1.8-2.1 2.4-.3 4.6-1.2 4.6-5.5 0-1.1-.4-2.1-1-2.9.1-.3.4-1.3-.1-2.7 0 0-.8-.3-2.7 1-.8-.2-1.6-.3-2.4-.3s-1.6.1-2.4.3c-1.9 1.2-2.7 1-2.7 1-.5 1.4-.2 2.4-.1 2.7-.6.8-1 1.8-1 2.9 0 4.3 2.3 5.2 4.6 5.5 1.1.2 1.8 1.1 1.8 2.1V21"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">shravan-sankar</span>
+                    </div>
+                    <svg class="contact-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        aria-hidden="true">
+                        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
             </div>
-
-            <div class="stack-item reveal">
-                <img src="assets/icons/css.svg" alt="CSS" />
-                <span>CSS</span>
-            </div>
-
-            <div class="stack-item reveal">
-                <img src="assets/icons/javascript.svg" alt="JavaScript" />
-                <span>JavaScript</span>
-            </div>
-
-            <div class="stack-item reveal">
-                <img src="assets/icons/cpp.svg" alt="C++" />
-                <span>C++</span>
-            </div>
-
-            <div class="stack-item reveal">
-                <img src="assets/icons/python.svg" alt="Python" />
-                <span>Python</span>
-            </div>
-
-            <div class="stack-item reveal">
-                <img src="assets/icons/java.svg" alt="Java" />
-                <span>Java</span>
-            </div>
-
-            <div class="stack-item reveal">
-                <img src="assets/icons/php.svg" alt="PHP" />
-                <span>PHP</span>
-            </div>
-
-            <div class="stack-item reveal">
-                <img src="assets/icons/mysql.svg" alt="MySQL" />
-                <span>MySQL</span>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2026 Shravan Sankar</p>
+        <p>&copy; 2026 Shravan Sankar</p>
+        <button class="back-to-top" aria-label="Back to top">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <path d="M9 14V4M5 7l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
     </footer>
 
     <script src="js/main.js"></script>
