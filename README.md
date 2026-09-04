@@ -2,7 +2,6 @@
 
 ## Features
 
-- **Futuristic design** – Sci-fi aesthetic with Orbitron typography, gradient text, and animated transitions
 - **Interactive UI** – Smooth hover effects, scroll reveal animations, and glowing accents
 - **Project showcase** – Expandable project cards with full details in a modal overlay
 - **Tech stack section** – Interactive icons for HTML, CSS, JavaScript, C++, Python
@@ -16,9 +15,11 @@
 
 ## Projects Featured
 
+- **Git Proxy Compliance Gate & Webhook** – a NatWest Group Internship project
+- **Backtesting Engine (coming soon)** – collaborating and building a backtesting engine in c++23 for our quantitative researchers at LQDF
 - **Limit Order Book Simulator** – C++ matching engine with real-time trading interface
 - **Ticketing System for a Performance Hall** – Java role-based system with Swing UI
-- **Mental Health Feature** – Laravel/PHP feature built during internship
+- **Mental Health Feature** – Laravel/PHP feature built during TruTrade internship
 - **Music Store Mental Health Management System** - Python project using Jupyter Notebook
 
 ## Running Locally
